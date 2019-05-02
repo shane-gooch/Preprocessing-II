@@ -3,10 +3,17 @@
 
 nav {
     width: 45%;
-    .flex-center(space-evenly, "","");
+    .flex-center(space-evenly, "", "");
 
+        @media @phone {
+            margin-top: 10px;
+            width: 80%;
+            .flex-center(space-between, "", "");
+        }
     a {
+        font-size: 1.25rem;
         text-decoration: none;
         color: @shark;
     }
+
 }
