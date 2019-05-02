@@ -1,27 +1,75 @@
 .home {
 
+  .header {
+    .flex-center(center,row,center);
+    .flex-center(space-between,"","");
+    margin-top: 1.25rem;
+
+      @media @phone {
+        .flex-center(center,column,"");
+      }
+  }
+
+  .intro-section {
+    width: 100%;
+
+      @media @phone {
+        padding: 0px 1.25%;
+      }
+
+    hr {
+      border-top: @border;
+      margin-bottom: 0px;
+    }
+
+    .text-intro {
+      margin-top: 1.25rem;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+      @media @phone {
+        .flex-center("", column, center);
+        margin-top: 15px;
+      }
+
+  }
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+        @media @phone {
+          width: 90%;
+
+          h2 {
+            margin-top: 20px;
+          }
+        }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+        @media @phone {
+          width: 90%;
+        }
+
       img {
         border-radius: 10px;
       }
     }
-  }
+
+    hr {
+      border-top: @border;
+      margin-top: 15px;
+    }
+
 
   .inverse-content {
     padding-bottom: 30px;
@@ -42,6 +90,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+      @media @phone {
+        width: 90%;
+      }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +105,28 @@
     display: flex;
     justify-content: space-between;
 
+      @media @phone {
+        .flex-center("", column, center);
+      }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+        @media @phone {
+          width: 90%;
+        }
     }
+
+      .btn {
+        .main-btn(darken(@button-bg, 10), @main-bg, 15px, 10px);
+        width: 85%;
+        font-size: 1.35rem;
+        text-align: center;
+
+          @media @phone {
+            width: 100%;
+          }
+      }
   }
-}// home
+}

@@ -1,1 +1,17 @@
-// Navigation Styles here
+// Navigation-Header Styles
+
+nav {
+    width: 45%;
+    .flex-center(space-evenly, "", "");
+
+        @media @phone {
+            margin-top: 10px;
+            width: 80%;
+            .flex-center(space-between, "", "");
+        }
+    a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: @font-color;
+    }
+}
