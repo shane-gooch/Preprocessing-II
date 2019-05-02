@@ -1,7 +1,6 @@
 .home {
 
   .header {
-    background-color: black;
     .flex-center(center,row,center);
     .flex-center(space-between,"","");
     margin-top: 1.25rem;
@@ -83,8 +82,10 @@
     }
 
       .btn {
-        border: 1px solid red;
-        .main-btn(@button-bg, @main-bg, 10px, 10px);
+        .main-btn(darken(@button-bg, 10), @main-bg, 15px, 10px);
+        width: 85%;
+        font-size: 1.35rem;
+        text-align: center;
       }
   }
 }
