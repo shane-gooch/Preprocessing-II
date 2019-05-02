@@ -1,6 +1,7 @@
 .home {
 
   .header {
+    background-color: black;
     .flex-center(center,row,center);
     .flex-center(space-between,"","");
     margin-top: 1.25rem;
@@ -10,8 +11,12 @@
     width: 100%;
 
     hr {
-      border-top: 1px dashed black;
+      border-top: @border;
       margin-bottom: 0px;
+    }
+
+    .text-intro {
+      margin-top: 1.25rem;
     }
   }
 
@@ -34,6 +39,11 @@
       img {
         border-radius: 10px;
       }
+    }
+
+    hr {
+      border-top: @border;
+      margin-top: 15px;
     }
 
 
@@ -71,5 +81,10 @@
       width: 30%;
       margin-bottom: 30px;
     }
+
+      .btn {
+        border: 1px solid red;
+        .main-btn(@button-bg, @main-bg, 10px, 10px);
+      }
   }
 }
