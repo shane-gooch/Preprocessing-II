@@ -1,5 +1,6 @@
 // Mixins in here
 
+// Flex
 .flex-center(@justify, @direction, @align){
     display: flex;
     justify-content: @justify;
@@ -7,9 +8,16 @@
     align-items: @align;
 }
 
+//Button
+
 .main-btn(@background-color,@color, @padding, @border-raduis) {
     background-color: @background-color;
     color: @color;
     padding: @padding;
     border-radius: @border-raduis;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(@background-color, 15);
+    }
 }
