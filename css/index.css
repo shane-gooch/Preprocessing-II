@@ -330,9 +330,13 @@ nav a {
   color: #FFFFFF;
   padding: 15px;
   border-radius: 10px;
+  cursor: pointer;
   width: 85%;
   font-size: 1.35rem;
   text-align: center;
+}
+.home .content-pick .btn:hover {
+  background-color: #093e47;
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {
